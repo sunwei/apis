@@ -1,0 +1,38 @@
+{
+  "version": "v1",
+  "namespace": "json",
+  "metadata": {
+    "author": "Sun Wei",
+    "email": "wayde.sun@gmail.com",
+    "repository": "https://github.com/sunwei/apis",
+    "description": "Json store service provided by oneapi.cc, powered by myjson.com"
+  },
+  "apis": [
+    {
+      "name": "Json Store",
+      "specs": "https://myjson.com/api",
+      "path": "/json/myjson",
+      "description": "A lightweight json store",
+      "annotations": "json, store"
+    }
+  ],
+  "upstreams": [
+    {
+      "name": "MyJson",
+      "endpoints": [
+        "api.myjson.com"
+      ]
+    }
+  ],
+  "routeSpecifications": [
+    {
+      "apiRef": "Json Store",
+      "upstreamRef": "MyJson",
+      "policies":{
+        "authentication": {
+          "type": "Basic"
+        }
+      }
+    }
+  ]
+}
