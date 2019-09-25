@@ -28,6 +28,7 @@
     {
       "apiRef": "Json Store",
       "upstreamRef": "MyJson",
+      "tls": "on",
       "policies":{
         "authentication": {
           "type": "Basic"
