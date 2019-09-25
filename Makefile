@@ -1,6 +1,7 @@
-CUR_TOKEN = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1Njg4NzgxMDUsIm5iZiI6MTU2ODg3ODEwNSwianRpIjoiZWFlMWI1YTQtNTAxNy00MmIyLTk0YjQtZGU2YWYzNTkxYmY2IiwiZXhwIjoxNTY4ODc5MDA1LCJpZGVudGl0eSI6MiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.8aA7ejNrdtTNhwNgoSongh94S0tLgE6pr5mbTOMTjB8
+CUR_TOKEN = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjkzNzQxNjQsIm5iZiI6MTU2OTM3NDE2NCwianRpIjoiN2NkM2RjZGEtMmEwNi00NjcxLWIwNzItY2Y1Nzg3ZTk2ODdlIiwiZXhwIjoxNTY5Mzc1MDY0LCJpZGVudGl0eSI6MiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.pkKdUuJmlOoTgpqUKA9JrEe66VMOL3xxGXi6SFQslpM
 APP_STG_URL = https://oneapi-server-stg.herokuapp.com
-APP_URL = $(APP_STG_URL)
+APP_PROD_URL = https://oneapi-server.herokuapp.com
+APP_URL = $(APP_PROD_URL)
 
 register:
 	curl -H 'Content-Type: application/json' -X POST -d \
