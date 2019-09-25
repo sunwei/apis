@@ -11,7 +11,7 @@
     {
       "name": "Json Store",
       "specs": "https://myjson.com/api",
-      "path": "/json/myjson",
+      "path": "/bins/",
       "description": "A lightweight json store",
       "annotations": "json, store"
     }
@@ -20,7 +20,7 @@
     {
       "name": "MyJson",
       "endpoints": [
-        "api.myjson.com"
+        "api.myjson.com:443"
       ]
     }
   ],
